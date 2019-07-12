@@ -62,99 +62,114 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\MoveForward.cs" />
-    <Compile Include="Assets\Scripts\MoveForward_Authoring.cs" />
-    <Compile Include="Assets\Scripts\MoveForward_System.cs" />
-    <Compile Include="Assets\Scripts\TimeUpDestroy.cs" />
-    <Compile Include="Assets\Scripts\TimeUpDestroy_Authoring.cs" />
-    <Compile Include="Assets\Scripts\TimeUpDestroy_System.cs" />
-    <Compile Include="Assets\Scripts\TimeUpUsable.cs" />
+    <Compile Include="Assets\Assets\DefaultInputAction.cs" />
+    <Compile Include="Assets\Scripts\Bullet.cs" />
+    <Compile Include="Assets\Scripts\Bullet_Authoring.cs" />
+    <Compile Include="Assets\Scripts\Bullet_System.cs" />
+    <Compile Include="Assets\Scripts\Character.cs" />
+    <Compile Include="Assets\Scripts\Character_Authoring.cs" />
+    <Compile Include="Assets\Scripts\Controllable.cs" />
+    <Compile Include="Assets\Scripts\Controllable_Authoring.cs" />
+    <Compile Include="Assets\Scripts\LifeEnd.cs" />
+    <Compile Include="Assets\Scripts\LifeEnd_System.cs" />
+    <Compile Include="Assets\Scripts\LifeTime.cs" />
+    <Compile Include="Assets\Scripts\LifeTime_Authoring.cs" />
+    <Compile Include="Assets\Scripts\LifeTime_System.cs" />
+    <Compile Include="Assets\Scripts\Movement.cs" />
+    <Compile Include="Assets\Scripts\Movement_Authoring.cs" />
+    <Compile Include="Assets\Scripts\Player_System.cs" />
+    <Compile Include="Assets\Scripts\Shooter.cs" />
+    <Compile Include="Assets\Scripts\Shooter_Authoring.cs" />
+    <Compile Include="Assets\Scripts\Shooter_System.cs" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>E:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>E:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline">
-      <HintPath>E:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>E:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>E:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>E:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst">
-      <HintPath>E:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Mathematics">
-      <HintPath>E:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst.Editor">
-      <HintPath>E:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Mathematics.Editor">
-      <HintPath>E:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+      <HintPath>D:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Entities.Properties">
-      <HintPath>E:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Entities.Properties.dll</HintPath>
+      <HintPath>D:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Entities.Properties.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Jobs">
-      <HintPath>E:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Jobs.dll</HintPath>
+      <HintPath>D:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Jobs.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Jobs.Editor">
-      <HintPath>E:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Jobs.Editor.dll</HintPath>
+      <HintPath>D:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Jobs.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Entities.Editor">
-      <HintPath>E:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Entities.Editor.dll</HintPath>
+      <HintPath>D:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Entities.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Entities.StaticTypeRegistry">
-      <HintPath>E:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Entities.StaticTypeRegistry.dll</HintPath>
+      <HintPath>D:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Entities.StaticTypeRegistry.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Collections">
-      <HintPath>E:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Collections.dll</HintPath>
+      <HintPath>D:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InputSystem">
+      <HintPath>D:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Scenes.Hybrid">
-      <HintPath>E:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Scenes.Hybrid.dll</HintPath>
+      <HintPath>D:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Scenes.Hybrid.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Scenes.Editor">
-      <HintPath>E:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Scenes.Editor.dll</HintPath>
+      <HintPath>D:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Scenes.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>D:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Extensions">
-      <HintPath>E:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Mathematics.Extensions.dll</HintPath>
+      <HintPath>D:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Mathematics.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>D:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Extensions.Hybrid">
-      <HintPath>E:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Mathematics.Extensions.Hybrid.dll</HintPath>
+      <HintPath>D:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Mathematics.Extensions.Hybrid.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Entities.BuildUtils">
-      <HintPath>E:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Entities.BuildUtils.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Entities.Hybrid">
-      <HintPath>E:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Entities.Hybrid.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Properties">
-      <HintPath>E:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Properties.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Entities">
-      <HintPath>E:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Entities.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Properties.Reflection">
-      <HintPath>E:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Properties.Reflection.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Transforms">
-      <HintPath>E:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Transforms.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Transforms.Editor">
-      <HintPath>E:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Transforms.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Transforms.Hybrid">
-      <HintPath>E:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Transforms.Hybrid.dll</HintPath>
+    <Reference Include="Unity.Timeline">
+      <HintPath>D:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rendering.Hybrid">
-      <HintPath>E:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Rendering.Hybrid.dll</HintPath>
+      <HintPath>D:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Rendering.Hybrid.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.CollabProxy.Editor">
+      <HintPath>D:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Entities.BuildUtils">
+      <HintPath>D:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Entities.BuildUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Entities.Hybrid">
+      <HintPath>D:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Entities.Hybrid.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>D:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Properties">
+      <HintPath>D:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Properties.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Entities">
+      <HintPath>D:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Properties.Reflection">
+      <HintPath>D:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Properties.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Transforms">
+      <HintPath>D:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Transforms.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Transforms.Editor">
+      <HintPath>D:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Transforms.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Editor">
+      <HintPath>D:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+      <HintPath>D:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>D:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.DataPrivacy">
+      <HintPath>D:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Transforms.Hybrid">
+      <HintPath>D:/Work Space/Unity Projects/ECSShooterSample/Library/ScriptAssemblies/Unity.Transforms.Hybrid.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -340,16 +355,16 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>E:/Work Space/Unity Projects/ECSShooterSample/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>D:/Work Space/Unity Projects/ECSShooterSample/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>E:/Work Space/Unity Projects/ECSShooterSample/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>D:/Work Space/Unity Projects/ECSShooterSample/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>E:/Work Space/Unity Projects/ECSShooterSample/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>D:/Work Space/Unity Projects/ECSShooterSample/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe">
-      <HintPath>E:/Work Space/Unity Projects/ECSShooterSample/Library/PackageCache/com.unity.collections@0.0.9-preview.20/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <HintPath>D:/Work Space/Unity Projects/ECSShooterSample/Library/PackageCache/com.unity.collections@0.0.9-preview.20/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.9f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
